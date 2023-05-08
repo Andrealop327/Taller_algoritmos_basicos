@@ -85,3 +85,19 @@
         //    let z = parseInt(document.getElementById('z').value);
         //    let promedio = (x+y+z)/3
     }
+
+    function notas(){};
+
+    function calcular_tiempo(){
+       let v1 = parseInt(document.getElementById('x1').value);
+       let v2 = parseInt(document.getElementById('y1').value);
+       let dist = parseInt(document.getElementById('z1').value);
+       let t = dist/(v1-v2);
+       let tf = t*60;
+
+       let resultado_1 = document.getElementById('resultado');
+       resultado_1.value = tf;
+       return  tf;
+    };
+
+

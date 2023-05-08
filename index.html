@@ -6,17 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola javascrip</title>
     <script src="funciones.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-   <form>
-        <input type="text" id="x"/><br>
-        <input type="text" id="y"/><br>
-        <input type="text" id="z"/><br>
-        <br><hr>
-        <input type="button" value="Aceptar" onclick="media()"/>
-        <br><hr>
-   </form> 
-
-   
+    <div class="container">
+        <div>
+            <h2>Calcular la media de tres números</h2>
+            <form>
+                <input type="text" id="x" placeholder="valor 1"/><br>
+                <input type="text" id="y" placeholder="valor 2"/><br>
+                <input type="text" id="z" placeholder="valor 3"/><br>
+                <br><hr>
+                <input class="btn btn-primary mb-3" type="button" value="Aceptar" onclick="media()"/><br>
+                <br><hr>
+            </form> 
+        </div>
+        <div>
+            <h2>Cacula el tiempo según la velocidad y distancia</h2>
+            <form>
+                <input type="text" id="x1" placeholder="velocidad 1"/><br>
+                <input type="text" id="y1" placeholder="velocidad 2"/><br>
+                <input type="text" id="z1" placeholder="distancia"/><br>
+                <br><hr>
+                <input  class="btn btn-primary mb-3" type="button" value="Aceptar" onclick="calcular_tiempo()"/>
+                <br><hr>
+                <input type="text" id="resultado" placeholder="Acá obtendras el resultado"/><br>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
