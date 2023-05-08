@@ -84,9 +84,31 @@
         //    let y = parseInt(document.getElementById('y').value);
         //    let z = parseInt(document.getElementById('z').value);
         //    let promedio = (x+y+z)/3
-    }
+    };
 
-    function notas(){};
+    function nota_final(){
+        let nota_1 = parseFloat(document.getElementById('nota_1').value);
+        let nota_2 = parseFloat(document.getElementById('nota_2').value);
+        let nota_3 = parseFloat(document.getElementById('nota_3').value);
+        let promedio_nota = (nota_1+nota_2+nota_3)/3;
+        let por_parciales = promedio_nota*0.55;
+
+        let nota_ex = parseFloat(document.getElementById('nota_ex').value);
+        let por_nota_ex = nota_ex*0.30;
+        
+        let nota_tra = parseInt(document.getElementById('nota_tra').value);
+        let por_nota_tra = nota_tra*0.15;
+         
+        let porc_final = (por_parciales+por_nota_ex+por_nota_tra);
+        
+        let nota_final = document.getElementById('resultado_final');
+        nota_final.value = porc_final;
+        console.log(porc_final);
+        return porc_final;
+       
+
+        
+    };
 
     function calcular_tiempo(){
        let v1 = parseInt(document.getElementById('x1').value);
